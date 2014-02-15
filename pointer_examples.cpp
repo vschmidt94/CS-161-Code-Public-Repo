@@ -37,8 +37,17 @@ int main() {
 
 	// make changes with *p2
 	*p2 = 987;
-	cout << "STATEMENT: *p2 = 982, now: " << endl;
+	cout << "STATEMENT: *p2 = 987, now: " << endl;
 	printit(p1, p2);
+
+	// look at the * and & operators:
+	cout << "Now, I am looking into the * and & operators: \n";
+	cout << "The value of *p1: " << *p1 << endl;
+	cout << "Should be the same as \n";
+	cout << "The value of &v1: " << &v1 << endl;
+	cout << "v2 remains equal to the original value: " << v2 << endl;
+	cout << "The value of &v2: " << &v2 << endl;
+	cout << "----------------------------------\n\n";
 
 	return 0;
 }
